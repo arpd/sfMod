@@ -15,7 +15,12 @@
     kerlilow@gmail.com
     http://www.zorexxlkl.com
 
-    
+------------------------------------------------------------
+-- Contributors                                           --
+------------------------------------------------------------
+  Benjamin Foster
+    bfoster@ripe.li
+
 ------------------------------------------------------------
 -- Download                                               --
 ------------------------------------------------------------
@@ -32,6 +37,18 @@
   3. Add the include and lib paths to your compiler.
   4. You're set! A short tutorial is available in the above link as well.
 
+------------------------------------------------------------
+-- Building on linux                                      --
+------------------------------------------------------------
+  1. Install libsfmod-dev and libmodplug-dev:
+       sudo apt-get install libsfmod-dev libmodplug-dev
+  1. Clone the repository
+  2. Build the project:
+       cd /path/to/repo
+       mkdir build && cd build
+       cmake .. && make
+  3. If all went well, you can check for any runtime faults
+     using the 'sfmod-test' binary, inside the build directory
 
 ------------------------------------------------------------
 -- Discussion                                             --
